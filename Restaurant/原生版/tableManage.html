@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/common/reset.css">
+    <link rel="stylesheet" href="CSS/tableManage.css">
+</head>
+<body>
+    <div id="admin">
+        <!-- 后台页面首页 -->
+        <div class="left">
+            <img src="images/logo.png" alt="">
+            <ul>
+                <li><span class="iconfont">&#xe600;</span>首页</li>
+                <li><span class="iconfont">&#xe606;</span>分类</li>
+                <li><span class="iconfont">&#xee58;</span>菜品</li>
+                <li class="active"><span class="iconfont">&#xe617;</span>餐桌</li>
+            </ul>
+        </div>
+        <!-- 点击餐桌，出现桌台数据和桌台模式上下两部分。上面为桌台数据，下面为桌台模式 -->
+        <div class="right">
+            <!-- 桌台数据结构 -->
+            <dl class="table">
+                <dt>桌台数据</dt>
+                <dd>
+                    <div>
+                        <strong>11</strong>
+                        <span>开桌数</span>
+                    </div>
+                </dd>
+                <dd>
+                    <div>
+                        <strong>5</strong>
+                        <span>空闲数</span>
+                    </div>
+                </dd>
+                <dd>
+                    <div>
+                        <strong>5</strong>
+                        <span>点餐数</span>
+                    </div>
+                </dd>
+                <dd>
+                    <div>
+                        <strong>1</strong>
+                        <span>下单数</span>
+                    </div>
+                </dd>
+            </dl>
+            <!-- 桌台模式的数据结构 -->
+            <div class="list">
+                <h3>桌台模式</h3>
+                <ul>
+                    <li>
+                        <div>
+                            <span class="iconfont">&#xee58;</span>1号桌
+                        </div>
+                        <p>
+                            <span>空闲中</span>
+                            <span>0人</span>
+                        </p>
+                    </li>
+                    <li class="eating">
+                        <div>
+                            <span class="iconfont">&#xee58;</span>2号桌
+                            <button>查看订单</button>
+                        </div>
+                        <p>
+                            <span>就餐中</span>
+                            <span>2人</span>
+                        </p>
+                    </li>
+                    <li class="ordering">
+                        <div>
+                            <span class="iconfont">&#xee58;</span>3号桌
+                        </div>
+                        <p>
+                            <span>点餐中</span>
+                            <span>3人</span>
+                        </p>
+                    </li>
+                    <li class="add"><span class="iconfont">&#xe608;</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* 导入头部和左侧区域样式 */
+@import url(./common/subBar.css);
+
+/* 主菜单背景图 */
+body{
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+    
+    /* 背景图片固定，不会跟着滚动条滚动 */
+    background-attachment: fixed;         
+}
+
+/* 内容区域样式 */
+#content{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    bottom: 20px;
+    left: 300px;
+    background: rgba(255,255,255,.2);
+    box-sizing: border-box;
+    padding: 10px;
+
+    /* 内容过多时出现滚动条的设置 */
+    overflow: hidden;
+}
+
+/* 座位页面样式 */
+.legend{
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+.legend li{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.legend li div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.legend li div span{
+    font-size: 25px;
+}
+
+.legend li:nth-child(1) div, .table div{
+    background: #66a8a6;
+}
+
+.legend li:nth-child(2) div, .table .ordering div{
+    background: #f79700;
+}
+
+.legend li:nth-child(3) div, .table .eating div{
+    background: #e5553f;
+}
+
+.table{
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.table li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 37px 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.table div{
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.table div span{
+    font-size: 80px;
+}
+

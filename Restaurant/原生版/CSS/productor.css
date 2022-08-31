@@ -1,0 +1,95 @@
+/* 导入头部和左侧区域样式 */
+@import url(./common/subBar.css);
+@import url(./common/navBar.css);
+
+/* 主菜单背景图 */
+body{
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+    
+    /* 背景图片固定，不会跟着滚动条滚动 */
+    background-attachment: fixed;         
+}
+
+/* 内容区域样式 */
+#content{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    bottom: 20px;
+    left: 300px;
+    background: rgba(255,255,255,.2);
+    box-sizing: border-box;
+    padding: 10px;
+
+    /* 内容过多时出现滚动条的设置 */
+    overflow: hidden;
+}
+
+.foodList{
+    font-size: 0;
+}
+
+.foodList li{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.foodList img{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.recommend{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 50px;
+    color: #ff8400;
+}
+
+.foodList .bar{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.foodList .bar p{
+    display: flex;
+    align-items: center;
+}
+
+.foodList .rmb{
+    font-size: 14px;
+}
+
+.foodList .price{
+    color: #f0e184;
+    margin: 0 10px;
+}
+
+.foodList .bar button{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #ff8400;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.foodList .bar button span{
+    font-size: 14px;
+}
